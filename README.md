@@ -139,6 +139,16 @@ df = df.get_dummies(df, columns=['country'])
 As it consit the newly created label column with only 2 different catergories, we can encode them to numeric using the map method like we did it before. 
 <img width="931" alt="Screenshot 2022-12-31 at 23 39 16" src="https://user-images.githubusercontent.com/64656686/210152211-64c7c4ce-2b05-45a4-b8f7-d0fa8268d909.png">
 
+17) Detecting and remeving Outliers 
+Frist it needs to verify the clumns which needs to be check for the outliers. 
+Then can use the below formula 
+
+from scipy import stats
+
+df=df[(np.abs(stats.zscore(df[list]))<3).all(axis=1)]
+<img width="924" alt="Screenshot 2023-01-01 at 00 20 19" src="https://user-images.githubusercontent.com/64656686/210153165-5aac6a5e-738a-4db9-a330-8f682dc37926.png">
+Here it considers the absolute value by the np.abs, and check the z_core is less than 3. If zscore less than 3 it is considered as a valid data and if it's not considered as an outlieer. 
+
 
 
 
