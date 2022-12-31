@@ -37,9 +37,12 @@ Ex- It needs to be converted the "ERR" values in the age column to null values.
 8) Remove the missing values. Here it is very easy to remove the rows with missing values to get a clear dataset but having large number of missing values can be leaded to reduce more rows and in the end it will lead to reduce machine learning model performances. So one way to to address this trade-off is to replace the missing values with the average values if the data type is integer. 
 
 It can accomplish by following the below steps 
-  from sklearn.impute import SimpleImputer
-  imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
-  df[['value', 'item purchased','monthly visits']] = imputer.fit_transform(df[['value', 'item purchased','monthly visits']])  
+
+from sklearn.impute import SimpleImputer
+
+imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
+  
+df[['value', 'item purchased','monthly visits']] = imputer.fit_transform(df[['value', 'item purchased','monthly visits']])  
  
 <img width="913" alt="Screenshot 2022-12-31 at 15 26 18" src="https://user-images.githubusercontent.com/64656686/210132507-2a365fbd-f1fb-45c9-a5b7-36215e460af0.png">
 
