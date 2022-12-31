@@ -12,5 +12,11 @@ Note - Some data like "date" should be stored under the Date and Time data types
 
 4) Check the data anomalies by using the the df[''].unique(), unique() function and the number of unique object by nunique() funtion
 <img width="901" alt="Screenshot 2022-12-31 at 12 19 33" src="https://user-images.githubusercontent.com/64656686/210128039-7dd09385-b345-48a6-b377-80741a46cf06.png">
+Ex- object us and usa both reffers to the same country, we should avoid these kind of anomalies by checking the others columns also. 
+
+5) Check the missing values of the each columns of the data frame by using the df.isna().sum(). Here it sum up every missing values to the each column by using the sum() function
+<img width="921" alt="Screenshot 2022-12-31 at 12 27 54" src="https://user-images.githubusercontent.com/64656686/210128257-dcc11bb1-d3a4-45e8-9f82-8572040d83de.png">
+Sometimes haiving very small amount of missing values might be not a harmful damage to the prediction values. But we can't decide it by checking only the num of missing values of the each columns. To get and clear idea,  we can use (df.isna().sum()*100)/len(df) to get the precentage of missing values of the each columns. 
+<img width="909" alt="Screenshot 2022-12-31 at 12 36 06" src="https://user-images.githubusercontent.com/64656686/210128457-9dae6e8f-2c40-4405-8769-0b0b09f96c4e.png">
 
 
