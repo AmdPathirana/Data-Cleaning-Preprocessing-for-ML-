@@ -94,6 +94,7 @@ In a situation where it requires to update the monthly visits column base on the
 <img width="912" alt="Screenshot 2022-12-31 at 22 47 33" src="https://user-images.githubusercontent.com/64656686/210151023-16f129fb-a094-42ba-a89c-7d1777d3c0b3.png">
 It can use below method to address the requirement
 
+
 def classify(values):
 
   if values >500:
@@ -107,13 +108,33 @@ def classify(values):
 
 Then it can use "apply" function to go all over the values in the particular column. While travelling over the all elements it can call the above define function. TO acomplish that we can use lambda function here
  
-df['monthly visits'] = df['monthly visits'].apply(lambda x: classify(x)) 
-<img width="921" alt="Screenshot 2022-12-31 at 22 54 16" src="https://user-images.githubusercontent.com/64656686/210151199-22d7cb9a-30fa-4468-b2b0-03a8867d7b9e.png">
+df['lables'] = df['monthly visits'].apply(lambda x: classify(x)) 
+Here it creates a new column call "labels" and asign values to it. 
+<img width="951" alt="Screenshot 2022-12-31 at 23 14 54" src="https://user-images.githubusercontent.com/64656686/210151674-28bea2bb-9e8f-4217-bbfd-53b9c27ebe8d.png">
 
 
+16) Converting the multiple catergorical values to the numerical values 
+Ex - Here in data set there are so many countries. So it is hard to use map() with the a python dictionary to convert these object to numeric values. 
+<img width="928" alt="Screenshot 2022-12-31 at 23 18 04" src="https://user-images.githubusercontent.com/64656686/210151739-677df457-87ea-434d-83c6-15d782c9b41b.png">
 
+So to acomplish this we can use hot encoding. 
 
+What Hot Encoding deos? 
+imgaine if we have 3 countries call India, China, France. In hot coding it try to create seperate column fro each country and denote them using the 1s and 0s
 
+India Chaina France
+
+  1     0      0
+  
+  0     1      0
+  
+  0     0      1
+
+Then it can denote each multiple catergorical varibel by using the hot encoding 
+
+df = df.get_dummies(df, columns=['country'])
+
+<img width="921" alt="Screenshot 2022-12-31 at 23 28 37" src="https://user-images.githubusercontent.com/64656686/210151960-4b62a4f8-4ad1-474b-98c2-ad0483f7271b.png">
 
 
 
