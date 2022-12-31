@@ -27,4 +27,71 @@ Sometimes haiving very small amount of missing values might be not a harmful dam
 <img width="920" alt="Screenshot 2022-12-31 at 12 49 33" src="https://user-images.githubusercontent.com/64656686/210128793-1b585dc5-06f9-448e-9f32-590de39a56ef.png">
 Here is no any duplication values in the data sets relates to each columns. 
 
+# Data cleaning and preprocessing 
+
+1) Replace error values with null values using pd.replace("ERR", np.nan)
+<img width="921" alt="Screenshot 2022-12-31 at 15 00 10" src="https://user-images.githubusercontent.com/64656686/210131858-be0051d5-8c51-4b39-a808-c297865bb17f.png">
+Ex- It needs to be converted the "ERR" values in the age column to null values. 
+<img width="930" alt="Screenshot 2022-12-31 at 15 01 41" src="https://user-images.githubusercontent.com/64656686/210131890-0aeac662-618a-4477-be2c-b6552e5e940f.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
