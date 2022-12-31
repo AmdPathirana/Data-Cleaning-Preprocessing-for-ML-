@@ -149,9 +149,27 @@ df=df[(np.abs(stats.zscore(df[list]))<3).all(axis=1)]
 <img width="924" alt="Screenshot 2023-01-01 at 00 20 19" src="https://user-images.githubusercontent.com/64656686/210153165-5aac6a5e-738a-4db9-a330-8f682dc37926.png">
 Here it considers the absolute value by the np.abs, and check the z_core is less than 3. If zscore less than 3 it is considered as a valid data and if it's not considered as an outlieer. 
 
+18) Feature Scaling 
 
+Some ML models are not good at working with the values which have huge gaps. Further more this causes to reduce the training efficenc of any model. To reduce it, we can perform the Feature Scaling. 
 
+Frist we can drop() method to drop the clumns of the original data which are not considered in feature scalings. 
 
+df.drop(['customer_id','date'], inplace=True, axis=1)
+<img width="922" alt="Screenshot 2023-01-01 at 00 33 49" src="https://user-images.githubusercontent.com/64656686/210153425-45a7b277-3017-4752-be2b-64acc25a22ec.png">
+Here inplace attribute use to peform the drop function for the original dataset, axis=1 use to denote the cloumns 
+
+Then it can be done feature scaling to the all values in the column in the given example, as they all in numeric form. 
+
+from sklearn.preprocessing import MinMaxScaler
+
+scaler =MinMaxScaler()
+
+ML_df = scaler.fit_transform(df)
+
+Here it convert the df in to new data frame call ML_DF. 
+
+<img width="921" alt="Screenshot 2023-01-01 at 00 38 21" src="https://user-images.githubusercontent.com/64656686/210153524-a75e810b-842b-4640-a912-ef1e6c022a48.png">
 
 
 
