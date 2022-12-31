@@ -82,9 +82,11 @@ Note - Here "USA" and "US" both reffers to the same country. So we can use one w
 df['country']=df['country'].replace("USA", "US") can be used to replace the word to one commom word. 
 <img width="919" alt="Screenshot 2022-12-31 at 21 13 21" src="https://user-images.githubusercontent.com/64656686/210148533-e7f3c4a1-ce89-4b40-bc4c-d6d50a2553d7.png">
 
+13) Mapping catogerical values to numeric values 
+In ML thee are some insidents where it requires to convert the catergorical varibles to the numeric variables. Here in example dat set it is goig to convert the 'gender' column to the numneric values by using the df['gender']=df['gender'].map({'Male':0, 'Female':1}). It has used the python dictionary inside the map function to denote the data which are required to convert into the numerics. 
+<img width="917" alt="Screenshot 2022-12-31 at 21 22 36" src="https://user-images.githubusercontent.com/64656686/210148829-6e574e7a-c3c1-48d3-834a-8af28d45e5ac.png">
 
-
-
+14)
 
 
 
