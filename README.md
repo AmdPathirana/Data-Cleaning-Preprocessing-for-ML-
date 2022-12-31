@@ -70,8 +70,17 @@ df['date']=pd.to_datetime(df['date'],('if it rquires it can denote the datetime 
 11) Converte the age date type float to integer data type.
 <img width="921" alt="Screenshot 2022-12-31 at 21 02 07" src="https://user-images.githubusercontent.com/64656686/210144324-20afe988-52e1-47df-adb2-0a589700e4e5.png">
 
+12) Remove data anomalies 
 
+First it needs to check the is there any noticiable data anomaly issues. 
+df.head(10)
+<img width="937" alt="Screenshot 2022-12-31 at 21 09 27" src="https://user-images.githubusercontent.com/64656686/210147248-282f3e85-83a3-48cb-b5c2-4c3c23490bc8.png">
+To check the anomalies clearly we can use df['country'].unique() method. 
+<img width="918" alt="Screenshot 2022-12-31 at 21 11 40" src="https://user-images.githubusercontent.com/64656686/210148097-da868d1d-7e4d-47c8-a371-a108e3f7d87c.png">
+Note - Here "USA" and "US" both reffers to the same country. So we can use one word to denote it. 
 
+df['country']=df['country'].replace("USA", "US") can be used to replace the word to one commom word. 
+<img width="919" alt="Screenshot 2022-12-31 at 21 13 21" src="https://user-images.githubusercontent.com/64656686/210148533-e7f3c4a1-ce89-4b40-bc4c-d6d50a2553d7.png">
 
 
 
