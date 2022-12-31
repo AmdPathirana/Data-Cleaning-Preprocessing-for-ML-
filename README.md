@@ -105,6 +105,11 @@ def classify(values):
   
 <img width="920" alt="Screenshot 2022-12-31 at 22 49 13" src="https://user-images.githubusercontent.com/64656686/210151074-ff678b5d-74ef-433a-b6ac-3ac52a8dd3e5.png">
 
+Then it can use "apply" function to go all over the values in the particular column. While travelling over the all elements it can call the above define function. TO acomplish that we can use lambda function here
+ 
+df['monthly visits'] = df['monthly visits'].apply(lambda x: classify(x)) 
+<img width="921" alt="Screenshot 2022-12-31 at 22 54 16" src="https://user-images.githubusercontent.com/64656686/210151199-22d7cb9a-30fa-4468-b2b0-03a8867d7b9e.png">
+
 
 
 
