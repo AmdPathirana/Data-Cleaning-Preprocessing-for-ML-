@@ -67,6 +67,9 @@ Check the current data type.
 df['date']=pd.to_datetime(df['date'],('if it rquires it can denote the datetime format here. ')) 
 <img width="942" alt="Screenshot 2022-12-31 at 16 02 23" src="https://user-images.githubusercontent.com/64656686/210133564-1b43fbf8-6a5c-4db5-92dd-7d45bce427d6.png">
 
+11) Converte the age date type float to integer data type.
+<img width="921" alt="Screenshot 2022-12-31 at 21 02 07" src="https://user-images.githubusercontent.com/64656686/210144324-20afe988-52e1-47df-adb2-0a589700e4e5.png">
+
 
 
 
