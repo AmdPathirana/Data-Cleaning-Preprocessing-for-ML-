@@ -58,6 +58,16 @@ In this method, it is going to delete the rows with "Nan" values by using the df
 9) Removing white spaces. There might be some chances to include white spaces when entering data. For an example here when it entering the country some one mistakely can enter the "USA" as " USA" so it needs to check the clumns which can affected by the white spaces and need to reduce those things. 
 <img width="913" alt="Screenshot 2022-12-31 at 15 47 50" src="https://user-images.githubusercontent.com/64656686/210133055-dbe75e9c-6168-472b-a22a-cc9d0c01e87a.png">
 
+10) Work with the "data" column. First it needs to check the data type the of the "date" column by using the df.info() method. If it is not date time it needs to be converted to the datetime data type with the required date and time format. 
+
+Check the current data type. 
+<img width="928" alt="Screenshot 2022-12-31 at 16 00 15" src="https://user-images.githubusercontent.com/64656686/210133499-00e760d5-236f-46dd-a6d8-5536a30e86f7.png">
+
+"date" column need to be convert to the "datetime" data format. 
+df['date']=pd.to_datetime(df['date'],('if it rquires it can denote the datetime format here. ')) 
+<img width="942" alt="Screenshot 2022-12-31 at 16 02 23" src="https://user-images.githubusercontent.com/64656686/210133564-1b43fbf8-6a5c-4db5-92dd-7d45bce427d6.png">
+
+
 
 
 
