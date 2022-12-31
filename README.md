@@ -55,6 +55,10 @@ Method 2
 In this method, it is going to delete the rows with "Nan" values by using the df.dropna(inplace=True"). It uses inplace=True attribute to denote that deletion part is going to do for the loaded data set for permanently. 
 <img width="915" alt="Screenshot 2022-12-31 at 15 36 09" src="https://user-images.githubusercontent.com/64656686/210132771-cb622875-66fd-4b6b-ae79-4b1052213851.png">
 
+9) Removing white spaces. There might be some chances to include white spaces when entering data. For an example here when it entering the country some one mistakely can enter the "USA" as " USA" so it needs to check the clumns which can affected by the white spaces and need to reduce those things. 
+<img width="913" alt="Screenshot 2022-12-31 at 15 47 50" src="https://user-images.githubusercontent.com/64656686/210133055-dbe75e9c-6168-472b-a22a-cc9d0c01e87a.png">
+
+
 
 
 
