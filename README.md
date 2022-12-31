@@ -122,7 +122,7 @@ So to acomplish this we can use hot encoding.
 What Hot Encoding deos? 
 imgaine if we have 3 countries call India, China, France. In hot coding it try to create seperate column fro each country and denote them using the 1s and 0s
 
-India Chaina France
+  I.    C.     F.
 
   1     0      0
   
