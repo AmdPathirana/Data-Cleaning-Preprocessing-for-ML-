@@ -6,6 +6,8 @@
 2) Read the data file (which is included here) using the pandas.read_excel() as df. Then use df.head() to check first 5 rows of the data frames. df.shape() uses to check the size (rows*columns) of the data frame. 
 <img width="906" alt="Screenshot 2022-12-31 at 12 07 30" src="https://user-images.githubusercontent.com/64656686/210127749-e9e14459-bd38-4e30-b8be-42029f6285e6.png">
 
+# Data quality checking
+
 3) To get the information about the stored data based on columnwise it can use df.info()
 <img width="898" alt="Screenshot 2022-12-31 at 12 09 29" src="https://user-images.githubusercontent.com/64656686/210127803-c9b24060-efaf-4e71-9964-b3b1046cc8b4.png">
 Note - Some data like "date" should be stored under the Date and Time data types, "age" must be int64 data type. Likewise there are issues with the data type which need to be addressed. 
@@ -20,5 +22,9 @@ Ex- object us and usa both reffers to the same country, we should avoid these ki
 <img width="921" alt="Screenshot 2022-12-31 at 12 27 54" src="https://user-images.githubusercontent.com/64656686/210128257-dcc11bb1-d3a4-45e8-9f82-8572040d83de.png">
 Sometimes haiving very small amount of missing values might be not a harmful damage to the prediction values. But we can't decide it by checking only the num of missing values of the each columns. To get and clear idea,  we can use (df.isna().sum()*100)/len(df) to get the precentage of missing values of the each columns. 
 <img width="909" alt="Screenshot 2022-12-31 at 12 36 06" src="https://user-images.githubusercontent.com/64656686/210128457-9dae6e8f-2c40-4405-8769-0b0b09f96c4e.png">
+
+6) Check the duplicated values of the data frame by using the df.duplicated()method. As it want to check the duplicated values based on columns it can use df[df.duplicated()]. 
+<img width="920" alt="Screenshot 2022-12-31 at 12 49 33" src="https://user-images.githubusercontent.com/64656686/210128793-1b585dc5-06f9-448e-9f32-590de39a56ef.png">
+Here is no any duplication values in the data sets relates to each columns. 
 
 
