@@ -136,6 +136,10 @@ df = df.get_dummies(df, columns=['country'])
 
 <img width="921" alt="Screenshot 2022-12-31 at 23 28 37" src="https://user-images.githubusercontent.com/64656686/210151960-4b62a4f8-4ad1-474b-98c2-ad0483f7271b.png">
 
+As it consit the newly created label column with only 2 different catergories, we can encode them to numeric using the map method like we did it before. 
+<img width="931" alt="Screenshot 2022-12-31 at 23 39 16" src="https://user-images.githubusercontent.com/64656686/210152211-64c7c4ce-2b05-45a4-b8f7-d0fa8268d909.png">
+
+
 
 
 
