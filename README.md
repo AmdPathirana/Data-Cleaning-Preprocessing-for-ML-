@@ -89,7 +89,22 @@ In ML thee are some insidents where it requires to convert the catergorical vari
 14) Groupby is used to group the data set base on particualr values in the column, Here this shows how it group the dataset base on the country and take the sum of values realted to each row of the countries. 
 <img width="917" alt="Screenshot 2022-12-31 at 21 36 05" src="https://user-images.githubusercontent.com/64656686/210149191-965a32e8-c903-415a-afe8-a174d31b7295.png">
 
-15) 
+15) Apply Lambda method for preprocessing the datset 
+In a situation where it requires to update the monthly visits column base on the number of visit this lambda method can used.  For an example if it requires to indicate if the monthly visit is more than 500 as active and rest as normal we can use this lambda method 
+<img width="912" alt="Screenshot 2022-12-31 at 22 47 33" src="https://user-images.githubusercontent.com/64656686/210151023-16f129fb-a094-42ba-a89c-7d1777d3c0b3.png">
+It can use below method to address the requirement
+
+def classify(values):
+
+  if values >500:
+    
+      return "Active"
+      
+   else:
+      return "Normal"
+  
+<img width="920" alt="Screenshot 2022-12-31 at 22 49 13" src="https://user-images.githubusercontent.com/64656686/210151074-ff678b5d-74ef-433a-b6ac-3ac52a8dd3e5.png">
+
 
 
 
